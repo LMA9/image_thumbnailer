@@ -10,9 +10,9 @@ Utility for image thumbnails creating in the loop.
 
 Utility can be execute only with all arguments or without them.
 
-* Source folder - the folder where the source images will be placed. Default is `./images`
-* Target folder - the folder where the created thumbnails will be placed. Default is `./thumbnails`
-* Sizes - list of sizes devided by `,` char. Default is `240,480`
+1. Source folder - the folder where the source images will be placed. Default is `./images`
+2. Target folder - the folder where the created thumbnails will be placed. Default is `./thumbnails`
+3. Sizes - list of sizes devided by `,` char. Default is `240,480`
 
 ### Example
 
