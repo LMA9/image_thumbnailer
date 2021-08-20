@@ -68,7 +68,7 @@ fn main() {
         None => sizes = vec![240, 480]
     }
 
-    println!("Thumbnailer was started.\nSource path: {}\nTarget path: {}", images_path, target_path);
+    println!("Thumbnailer was started.\nSource path: {}\nTarget path: {}\nSizes: {}", images_path, target_path, sizes.iter().map(|s| s.to_string()).collect::<Vec<String>>().join(", "));
 
     loop {
         if Path::new(images_path).exists() {
@@ -89,7 +89,6 @@ fn main() {
                 }
             }
             thread::sleep(Duration::from_secs(5))
-
         } else {
             thread::sleep(Duration::from_secs(30))
         }
