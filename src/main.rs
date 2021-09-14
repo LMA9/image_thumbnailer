@@ -8,8 +8,8 @@ use std::time::Duration;
 use std::env;
 
 const HELP_STRING: &str = "
-Usage: `image_thumbnailer Optional['source_path', 'target_path', [thumbnails_sizes]]
-Example: `image_thumbnailer images/wallpapers thumbnails 240,480,960`";
+Usage: image_thumbnailer Optional['source_path', 'target_path', [thumbnails_sizes]]
+Example: image_thumbnailer images/wallpapers thumbnails 240,480,960";
 
 fn create_thumbnail(image: &DynamicImage, image_name: &str, size: u32, target_path: &String) {
     let thumbnails_path = format!("{}/{}", target_path, size);
